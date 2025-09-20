@@ -390,7 +390,7 @@ def generic_smart_extract(files, filter_text, decision):
             val = smart_find_value(LINES, synonyms)
             row[field] = val
         if "Total_TTC" in row and row["Total_TTC"]:
-            num = normalize_amount(row["Total_TTC'])
+            num = normalize_amount(row["Total_TTC"])
             if num is not None: row["Total_TTC_num"] = num
         all_rows_mem.append(row)
 
